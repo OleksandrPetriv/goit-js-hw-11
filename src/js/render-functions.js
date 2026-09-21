@@ -40,6 +40,7 @@ export function createGallery(images) {
         </li>
         `
     ).join("");
+    loader.textContent = "Loading images, please wait...";
     gallery.insertAdjacentHTML("beforeend", markup);
     lightbox.refresh();
 }
